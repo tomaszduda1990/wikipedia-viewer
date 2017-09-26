@@ -294,6 +294,7 @@ html{
 								margin-top: 4px;
 								font-weight: 700;
 								font-family: 'Raleway', cursive;
+								-webkit-transition: .7s;
 								transition: .7s;
 						  }
 						  p{
@@ -361,7 +362,8 @@ html{
 	    -ms-flex-align: center;
 	        align-items: center;
 	-ms-flex-pack: distribute;
-	    justify-content: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
 	position: fixed;
 	z-index: 100;
 	h1{
@@ -384,7 +386,10 @@ html{
 	form{
 		width: 100%;
 		margin-top: 15px;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		div{
 			margin-bottom: 0;
 			width: 60%;

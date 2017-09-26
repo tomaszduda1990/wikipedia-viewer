@@ -253,6 +253,7 @@ html {
               margin-top: 4px;
               font-weight: 700;
               font-family: 'Raleway', cursive;
+              -webkit-transition: .7s;
               transition: .7s; }
             html body .results .results-items li a p {
               font-family: 'Roboto', sans-serif;
@@ -299,6 +300,7 @@ html {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
+  -webkit-box-pack: center;
   justify-content: center;
   position: fixed;
   z-index: 100; }
@@ -319,6 +321,9 @@ html {
   .submitted .search-section form {
     width: 100%;
     margin-top: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
     .submitted .search-section form div {
       margin-bottom: 0;
