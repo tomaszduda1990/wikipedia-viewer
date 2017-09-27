@@ -398,7 +398,7 @@ html{
 					content: "";
 				}				
 				span{
-						z-index: 4;
+
 				}
 			}
 		}
@@ -478,6 +478,13 @@ html{
 		}
 	}
 	.submitted .search-section{
+		header{
+			h1{
+				span{
+					right: 15px !important;
+				}
+			}
+		}
 		form{
 			.input{
 				input{
@@ -500,6 +507,7 @@ html{
 					font-size: 35px !important;
 					span{
 						right: -30px !important;
+
 					}
 				}
 			}
@@ -526,11 +534,26 @@ html{
 		}
 		.submitted .search-section{
 			header{
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
 				h1{
 					font-size: 15px !important;
+					span{
+						display: block;
+						width: 42px;
+						height: 42px;
+						padding: 4.5px;
+						left: 50%;
+						transform: translateX(-50%);
+						z-index: 4;
+						font-size: 25px;
+						margin: 15px 0;
+					}
 				}
 			}
 			form{
+				margin-top: 60px;
 				.input{
 					width: 70%;
 					.label{
