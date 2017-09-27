@@ -74,6 +74,7 @@ html {
           -webkit-transition: .4s;
           transition: .4s; }
           html body .search-section form div .label {
+            cursor: pointer;
             position: absolute;
             outline: none;
             display: -webkit-box;
