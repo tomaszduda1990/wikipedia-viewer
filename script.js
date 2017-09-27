@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const form = document.querySelector('.search-form');
 const randomBtn = form.querySelector('.rand-btn');
 const searchBtn = form.querySelector('.search-btn');
@@ -111,6 +112,7 @@ function displayResults(e) {
 			results.innerHTML = "";
 			setResults(suggestions);
 		}	
+	
 }
 function resultMenuView(){
 	isMinified = true;

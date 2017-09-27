@@ -26,36 +26,43 @@ html{
 
 		.search-section{
 			width: 100%;		
+
 			header{
 				text-align: center;
 				margin-bottom: 20px;
 				h1{
-					display: inline-block;
-					position: relative;
-					font-size: 55px;
-					font-weight: 400;
-					font-family: 'Lobster', cursive;
-					margin-bottom: 5px;
-					&:before{
-						content: "Wikipedia Viewer";
-					}
-					span{
-						font-size: 40%;
-						position: absolute;
-						right: -15%;
-						top: -15px;
 						display: inline-block;
-						border: 1px solid black;
-						border-radius: 50%;
-						padding: 5px;
-						-webkit-animation: spin .5s alternate ease-in-out;
-						        animation: spin .5s alternate ease-in-out;
-						-webkit-animation-iteration-count: 2;
-						        animation-iteration-count: 2;
-						
-					}					
-				}
+						position: relative;
+						font-size: 55px;
+						font-weight: 400;
+						font-family: 'Lobster', cursive;
+						margin-bottom: 5px;
+						&:before{
+							content: "Wikipedia Viewer";
+						}
+											
+					span{
+							a{
+								text-decoration: none;
+								color: black;
+							}
+							position: absolute;
+							right: -15%;
+							top: -15px;
+							font-size: 40%;
+							display: inline-block;
+							border: 1px solid black;
+							border-radius: 50%;
+							padding: 5px;
+							-webkit-animation: spin .5s alternate ease-in-out;
+							        animation: spin .5s alternate ease-in-out;
+							-webkit-animation-iteration-count: 2;
+							        animation-iteration-count: 2;
+							
+						}
+				
 			}
+		}
 			form{
 				width: 60%;
 				margin: 0 auto;
@@ -231,8 +238,18 @@ html{
 		.results{
 			width: 100%;
 			min-height: 0;
-			background: url('imgs/woods.jpg') repeat;
-			background-position: fixed;	
+			position: relative;
+			&:after{
+				content: "";
+  				background: url('imgs/woods.jpg') repeat;
+  				opacity: 0.4;
+  				top: 0;
+				left: 0;
+			  	bottom: 0;
+			  	right: 0;
+			  	position: absolute;
+			  	z-index: -1;
+			}
 			.results-items{
 				width: 80%;
 				margin: 0 auto;
@@ -367,26 +384,25 @@ html{
 	        justify-content: center;
 	position: fixed;
 	z-index: 100;
-	h1{
-		position: absolute;
-		top: 10px;
-		left: 20px;
-		font-size: 27px;
-		margin: 5px 0 0 0;
-		border-radius: 50%;
-		padding: 5px;
-		border: 1px solid black;	
-		&:before{
-			font-family: 'FontAwesome';
-			content: "\f266";
+		header{
+			position: absolute;
+			top: 0;
+			left: 0;
+			h1{
+				position: relative;
+				width: 80px;
+				height: 80px;	
+				&:before{
+					content: "";
+				}				
+				span{
+						z-index: 4;
+				}
+			}
 		}
-		span{
-			display: none;
-		}
-	}
 	form{
 		width: 100%;
-		margin-top: 15px;
+		margin: 40px 0 0 20px;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
