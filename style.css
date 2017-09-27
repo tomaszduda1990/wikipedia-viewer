@@ -33,6 +33,7 @@ html {
           html body .search-section header h1:before {
             content: "Wikipedia Viewer"; }
           html body .search-section header h1 span {
+            z-index: 6;
             position: absolute;
             right: -15%;
             top: -15px;
@@ -368,7 +369,8 @@ html {
 
 @media screen and (max-width: 650px) and (min-width: 481px) {
   .search-section header h1 span {
-    right: -30px !important; }
+    right: -30px !important;
+    z-index: 4; }
   .search-section form .suggestions li {
     font-size: 20px; }
   .search-section form .input input {
@@ -379,7 +381,8 @@ html {
     font-size: 14px !important; }
 
   .submitted .search-section header h1 span {
-    right: 15px !important; }
+    right: 15px !important;
+    z-index: 4; }
   .submitted .search-section form .input input {
     font-size: 18px;
     padding-right: 5px; }
@@ -389,7 +392,8 @@ html {
   .search-section header h1 {
     font-size: 35px !important; }
     .search-section header h1 span {
-      right: -30px !important; }
+      right: -30px !important;
+      z-index: 4; }
   .search-section form {
     width: 90% !important; }
     .search-section form .suggestions li {
