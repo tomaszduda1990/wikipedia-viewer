@@ -89,8 +89,9 @@ html{
 					        transform: scale(0.95);	
 					-webkit-transition: .4s;	
 					transition: .4s;
-					label{
+					.label{
 						position: absolute;
+						outline: none;
 						display: -webkit-box;
 						display: -ms-flexbox;
 						display: flex;
@@ -98,6 +99,7 @@ html{
 						    -ms-flex-align: center;
 						        align-items: center;
 						padding: 0 15px;
+						border: none;
 						border-right: 1px solid #ccc;
 						border-top-left-radius: 25px;
 						border-bottom-left-radius: 25px;
@@ -127,7 +129,7 @@ html{
 						  background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
 						}
 					&:hover{
-						label{
+						.label{
 							color: black;
 						}
 					}
@@ -390,8 +392,8 @@ html{
 			left: 0;
 			h1{
 				position: relative;
-				width: 80px;
-				height: 80px;	
+				width: 100px;
+				height: 100	px;	
 				&:before{
 					content: "";
 				}				
@@ -402,7 +404,7 @@ html{
 		}
 	form{
 		width: 100%;
-		margin: 40px 0 0 20px;
+		margin: 40px 0 20px 0;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
@@ -411,7 +413,7 @@ html{
 			margin-bottom: 0;
 			width: 60%;
 			
-			label{
+			.label{
 				font-size: 25px;
 			}
 			input{
@@ -531,7 +533,7 @@ html{
 			form{
 				.input{
 					width: 70%;
-					label{
+					.label{
 						font-size: 15px;
 					}
 					input{

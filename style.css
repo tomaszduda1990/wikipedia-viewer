@@ -73,8 +73,9 @@ html {
           transform: scale(0.95);
           -webkit-transition: .4s;
           transition: .4s; }
-          html body .search-section form div label {
+          html body .search-section form div .label {
             position: absolute;
+            outline: none;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -82,6 +83,7 @@ html {
             -ms-flex-align: center;
             align-items: center;
             padding: 0 15px;
+            border: none;
             border-right: 1px solid #ccc;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
@@ -108,7 +110,7 @@ html {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
             background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#EFEFEF));
             background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%); }
-          html body .search-section form div:hover label {
+          html body .search-section form div:hover .label {
             color: black; }
         html body .search-section form ul {
           position: absolute;
@@ -323,15 +325,15 @@ html {
     left: 0; }
     .submitted .search-section header h1 {
       position: relative;
-      width: 80px;
-      height: 80px; }
+      width: 100px;
+      height: 100	px; }
       .submitted .search-section header h1:before {
         content: ""; }
       .submitted .search-section header h1 span {
         z-index: 4; }
   .submitted .search-section form {
     width: 100%;
-    margin: 40px 0 0 20px;
+    margin: 40px 0 20px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -339,7 +341,7 @@ html {
     .submitted .search-section form div {
       margin-bottom: 0;
       width: 60%; }
-      .submitted .search-section form div label {
+      .submitted .search-section form div .label {
         font-size: 25px; }
       .submitted .search-section form div input {
         text-align: center;
@@ -401,7 +403,7 @@ html {
     font-size: 15px !important; }
   .submitted .search-section form .input {
     width: 70%; }
-    .submitted .search-section form .input label {
+    .submitted .search-section form .input .label {
       font-size: 15px; }
     .submitted .search-section form .input input {
       text-align: center;

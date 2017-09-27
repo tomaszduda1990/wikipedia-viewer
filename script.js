@@ -8,7 +8,7 @@ const list = document.querySelector('.suggestions');
 const resultsSection = document.querySelector('.results');
 const results = document.querySelector('.results-items');
 const searchSection = document.querySelector('.search-section');
-const label = document.querySelector('label');
+const label = document.querySelector('.label');
 const length = 10;
 const url = 'https://en.wikipedia.org/w/api.php?action=query&prop=info&inprop=url&utf8=&format=json&list=search&srsearch=';
 const random = 'https://en.wikipedia.org/wiki/Special:Random';
@@ -114,6 +114,10 @@ function displayResults(e) {
 		}	
 	
 }
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 function resultMenuView(){
 	isMinified = true;
 	document.body.classList.remove('add-background');
@@ -145,4 +149,5 @@ document.addEventListener('click', deleteSugg);
 search.addEventListener('input', displaySuggestions);
 search.addEventListener('keydown', deleteSugg);
 form.addEventListener('submit', displayResults);
+form.addEventListener('submit', topFunction);
 		
