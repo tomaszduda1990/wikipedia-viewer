@@ -74,7 +74,6 @@ html {
           -webkit-transition: .4s;
           transition: .4s; }
           html body .search-section form div .label {
-            cursor: pointer;
             position: absolute;
             outline: none;
             display: -webkit-box;
@@ -96,6 +95,8 @@ html {
             z-index: 3;
             height: 100%;
             line-height: 100%; }
+            html body .search-section form div .label:hover {
+              cursor: pointer; }
           html body .search-section form div input {
             width: 100%;
             padding: 20px 70px;
